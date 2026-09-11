@@ -1,57 +1,18 @@
-// Mobile navigation
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
+const menu=document.querySelector(".menu-toggle"),nav=document.querySelector(".nav");
+menu?.addEventListener("click",()=>{const open=nav.classList.toggle("open");menu.setAttribute("aria-expanded",String(open))});
+document.querySelectorAll(".nav a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");menu?.setAttribute("aria-expanded","false")}));
 
-menuToggle.addEventListener("click", () => {
-  const open = navLinks.classList.toggle("open");
-  menuToggle.setAttribute("aria-expanded", open);
-});
+document.querySelectorAll(".faq-item button").forEach(btn=>btn.addEventListener("click",()=>{
+  const item=btn.parentElement;
+  document.querySelectorAll(".faq-item").forEach(x=>{if(x!==item)x.classList.remove("active")});
+  item.classList.toggle("active");
+}));
 
-document.querySelectorAll(".nav-links a").forEach(link => {
-  link.addEventListener("click", () => navLinks.classList.remove("open"));
-});
+const slides=[...document.querySelectorAll(".testimonial")], dots=[...document.querySelectorAll(".dot")]; let current=0;
+function show(i){if(!slides.length)return;current=(i+slides.length)%slides.length;slides.forEach((s,n)=>s.classList.toggle("active",n===current));dots.forEach((d,n)=>d.classList.toggle("active",n===current))}
+document.querySelector(".prev")?.addEventListener("click",()=>show(current-1));
+document.querySelector(".next")?.addEventListener("click",()=>show(current+1));
+dots.forEach(d=>d.addEventListener("click",()=>show(Number(d.dataset.slide))));
 
-// FAQ accordion
-document.querySelectorAll(".faq-question").forEach(question => {
-  question.addEventListener("click", () => {
-    const current = question.parentElement;
-    document.querySelectorAll(".faq-item").forEach(item => {
-      if (item !== current) item.classList.remove("active");
-    });
-    current.classList.toggle("active");
-  });
-});
-
-// Testimonial carousel
-const testimonials = [...document.querySelectorAll(".testimonial")];
-const dots = [...document.querySelectorAll(".dot")];
-let currentSlide = 0;
-
-function showSlide(index) {
-  currentSlide = (index + testimonials.length) % testimonials.length;
-  testimonials.forEach((item, i) => item.classList.toggle("active", i === currentSlide));
-  dots.forEach((dot, i) => dot.classList.toggle("active", i === currentSlide));
-}
-
-document.querySelector(".prev").addEventListener("click", () => showSlide(currentSlide - 1));
-document.querySelector(".next").addEventListener("click", () => showSlide(currentSlide + 1));
-dots.forEach(dot => {
-  dot.addEventListener("click", () => showSlide(Number(dot.dataset.slide)));
-});
-
-// Scroll reveal animation
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
-
-document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
-
-// Demo links should not jump to the top
-document.querySelectorAll('a[href="#"]').forEach(link => {
-  link.addEventListener("click", e => e.preventDefault());
-});
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");observer.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));

@@ -1,221 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="VELOOP Rewards - Earn rewards from simple activities and redeem them with flexible payout options.">
-  <title>VELOOP Rewards | Earn More, Reward Yourself</title>
+  <meta name="description" content="VELOOP Rewards — a premium rewards and engagement experience.">
+  <title>VELOOP Rewards</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="navbar">
-    <a class="logo" href="#home" aria-label="VELOOP Rewards home">
-      <span class="logo-mark">V</span>
-      <span>VELOOP<span class="logo-muted">Rewards</span></span>
-    </a>
+<header class="navbar">
+  <a class="brand" href="#home"><span class="brand-mark">V</span><span>VELOOP <em>Rewards</em></span></a>
+  <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="nav" id="nav">
+    <a href="#earn">Ways to Earn</a><a href="#withdraw">Withdrawals</a><a href="#about">About</a>
+    <a href="#business">For Business</a><a href="#faq">FAQ</a><a class="signin" href="#cta">Sign In</a>
+  </nav>
+</header>
 
-    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+<main id="home">
+<section class="hero section">
+  <div class="hero-copy reveal">
+    <div class="eyebrow"><span class="live-dot"></span> A smarter way to earn rewards</div>
+    <h1>Turn everyday actions into <span>real rewards.</span></h1>
+    <p>Discover simple ways to earn VEs, build your rewards balance, and redeem through supported payout methods.</p>
+    <div class="actions"><a class="btn primary" href="#earn">Start Earning <b>→</b></a><a class="btn ghost" href="#about">Know More About Us</a></div>
+    <div class="community"><div class="avatars"><i>R</i><i>A</i><i>K</i><i>+</i></div><div><strong>Built for everyday earners</strong><small>Students • Freelancers • Professionals</small></div></div>
+  </div>
 
-    <nav class="nav-links">
-      <a href="#earn">Ways to Earn</a>
-      <a href="#withdrawals">Withdrawals</a>
-      <a href="#about">About</a>
-      <a href="#business">For Business</a>
-      <a href="#faq">Blog</a>
-      <a class="nav-signin" href="#cta">Sign In</a>
-    </nav>
-  </header>
-
-  <main id="home">
-    <section class="hero section">
-      <div class="hero-bg-circle circle-one"></div>
-      <div class="hero-bg-circle circle-two"></div>
-
-      <div class="hero-copy reveal">
-        <span class="eyebrow"><span class="pulse"></span> A smarter way to earn rewards</span>
-        <h1>Turn everyday actions into <span>real rewards.</span></h1>
-        <p>Discover simple ways to earn VEs, build your rewards balance, and redeem it through the payout method that works for you.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#earn">Start Earning <span>→</span></a>
-          <a class="btn btn-secondary" href="#about">Know More About Us</a>
-        </div>
-        <div class="hero-trust">
-          <div class="avatar-stack">
-            <span>R</span><span>A</span><span>K</span><span>+</span>
-          </div>
-          <div><strong>Built for everyday earners</strong><small>Students • Freelancers • Professionals</small></div>
-        </div>
-      </div>
-
-      <div class="hero-visual reveal">
-        <div class="dashboard-card">
-          <div class="dash-top">
-            <div><span class="mini-label">Your balance</span><strong>12,480 <small>VEs</small></strong></div>
-            <span class="wallet-icon">◈</span>
-          </div>
-          <div class="balance-chart">
-            <svg viewBox="0 0 500 180" preserveAspectRatio="none" aria-label="Reward growth chart">
-              <defs>
-                <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0" stop-opacity=".25"/>
-                  <stop offset="1" stop-opacity="0"/>
-                </linearGradient>
-              </defs>
-              <path class="chart-area" d="M0 150 C55 125 70 145 120 110 S185 120 225 80 S290 100 335 58 S410 75 500 22 L500 180 L0 180Z"/>
-              <path class="chart-line" d="M0 150 C55 125 70 145 120 110 S185 120 225 80 S290 100 335 58 S410 75 500 22"/>
-            </svg>
-          </div>
-          <div class="dash-bottom"><span>Reward growth</span><b>+24.8%</b></div>
-        </div>
-
-        <div class="floating-card earn-card"><span class="float-icon">✓</span><div><b>+250 VEs</b><small>Daily Bonus</small></div></div>
-        <div class="floating-card payout-card"><span class="float-icon">₹</span><div><b>₹500</b><small>Withdrawal ready</small></div></div>
-        <div class="coin coin-a">VE</div>
-        <div class="coin coin-b">★</div>
-      </div>
-    </section>
-
-    <section class="trust-strip section">
-      <div class="trust-item"><span>✓</span><div><strong>Secure Platform</strong><small>Designed with trust in mind</small></div></div>
-      <div class="trust-item"><span>↗</span><div><strong>Fast Withdrawals</strong><small>Simple redemption experience</small></div></div>
-      <div class="trust-item"><span>◆</span><div><strong>Multiple Reward Options</strong><small>Choose what suits you</small></div></div>
-      <div class="trust-item"><span>∞</span><div><strong>Growing Community</strong><small>Built for everyday users</small></div></div>
-    </section>
-
-    <section class="section" id="earn">
-      <div class="section-heading reveal">
-        <span class="eyebrow">WAYS TO EARN</span>
-        <h2>More ways to earn.<br><span>More reasons to keep going.</span></h2>
-        <p>Choose activities that fit your routine and turn your time and engagement into rewards.</p>
-      </div>
-      <div class="feature-grid">
-        <article class="feature-card reveal"><span class="card-icon">▶</span><h3>Watch Ads</h3><p>Complete ad activities and collect rewards along the way.</p><a href="#">Learn more →</a></article>
-        <article class="feature-card reveal"><span class="card-icon">↗</span><h3>Referral Program</h3><p>Invite friends and grow your rewards together.</p><a href="#">Learn more →</a></article>
-        <article class="feature-card reveal"><span class="card-icon">♟</span><h3>Daily Streak</h3><p>Stay consistent and unlock rewards for showing up.</p><a href="#">Learn more →</a></article>
-        <article class="feature-card reveal"><span class="card-icon">◉</span><h3>Mine & Earn</h3><p>Explore simple reward activities and build your balance.</p><a href="#">Learn more →</a></article>
-        <article class="feature-card reveal"><span class="card-icon">◆</span><h3>Stake & Earn</h3><p>Put eligible rewards to work through available options.</p><a href="#">Learn more →</a></article>
-        <article class="feature-card reveal"><span class="card-icon">⌁</span><h3>Tap & Earn</h3><p>Complete quick interactions designed for easy earning.</p><a href="#">Learn more →</a></article>
-        <article class="feature-card reveal"><span class="card-icon">↻</span><h3>Sync & Earn</h3><p>Connect your activities and keep your earning journey moving.</p><a href="#">Learn more →</a></article>
-        <article class="feature-card reveal"><span class="card-icon">%</span><h3>Promo Codes</h3><p>Use eligible promotional codes for additional opportunities.</p><a href="#">Learn more →</a></article>
-        <article class="feature-card reveal"><span class="card-icon">✦</span><h3>Lucky Spins</h3><p>Try your luck with engaging reward experiences.</p><a href="#">Learn more →</a></article>
-        <article class="feature-card reveal"><span class="card-icon">☀</span><h3>Daily Bonus</h3><p>Check in regularly and collect available daily bonuses.</p><a href="#">Learn more →</a></article>
-        <article class="feature-card reveal"><span class="card-icon">XP</span><h3>XP Rewards</h3><p>Build experience and unlock more ways to engage.</p><a href="#">Learn more →</a></article>
-      </div>
-    </section>
-
-    <section class="withdraw section" id="withdrawals">
-      <div class="section-heading reveal">
-        <span class="eyebrow">WITHDRAWALS</span>
-        <h2>Earn it. Choose it.<br><span>Redeem it.</span></h2>
-        <p>When you're ready, select a supported payout option and turn your rewards into something useful.</p>
-      </div>
-      <div class="payout-grid">
-        <article class="payout-card reveal"><div class="payout-logo">UPI</div><h3>UPI</h3><p>A familiar digital payment option for eligible redemptions.</p></article>
-        <article class="payout-card reveal"><div class="payout-logo amazon">A</div><h3>Amazon Gift Card</h3><p>Redeem eligible rewards through an Amazon gift card.</p></article>
-        <article class="payout-card reveal"><div class="payout-logo play">▶</div><h3>Google Play Gift Card</h3><p>Use eligible rewards for Google Play purchases.</p></article>
-        <article class="payout-card reveal"><div class="payout-logo paypal">P</div><h3>PayPal</h3><p>A familiar digital wallet option where supported.</p></article>
-      </div>
-    </section>
-
-    <section class="steps section">
-      <div class="section-heading centered reveal">
-        <span class="eyebrow">HOW IT WORKS</span>
-        <h2>Three simple steps.<br><span>One rewarding journey.</span></h2>
-      </div>
-      <div class="steps-grid">
-        <article class="step reveal"><span class="step-no">01</span><div class="step-art">◎</div><h3>Create Account</h3><p>Join VELOOP Rewards and set up your account.</p></article>
-        <article class="step reveal"><span class="step-no">02</span><div class="step-art">↗</div><h3>Earn Rewards</h3><p>Pick activities you like and collect VEs.</p></article>
-        <article class="step reveal"><span class="step-no">03</span><div class="step-art">◇</div><h3>Redeem Rewards</h3><p>Choose an eligible withdrawal method and redeem.</p></article>
-      </div>
-    </section>
-
-    <section class="withdraw-flow section">
-      <div class="flow-copy reveal">
-        <span class="eyebrow">HOW WITHDRAWALS WORK</span>
-        <h2>From activity to<br><span>reward in a few steps.</span></h2>
-        <p>Keep the redemption journey clear and easy to understand from the moment you earn to the moment you receive your reward.</p>
-        <a class="btn btn-primary" href="#cta">Start Earning <span>→</span></a>
-      </div>
-      <div class="flow-list">
-        <div class="flow-item reveal"><b>01</b><span>Complete Activities</span><i>→</i></div>
-        <div class="flow-item reveal"><b>02</b><span>Earn VEs</span><i>→</i></div>
-        <div class="flow-item reveal"><b>03</b><span>Choose Withdrawal Method</span><i>→</i></div>
-        <div class="flow-item active reveal"><b>04</b><span>Receive Reward</span><i>✓</i></div>
-      </div>
-    </section>
-
-    <section class="why section" id="about">
-      <div class="why-visual reveal"><div class="orb"></div><div class="why-card card-top">Simple <b>✓</b></div><div class="why-card card-right">Rewarding <b>✦</b></div><div class="why-card card-bottom">Built for you <b>∞</b></div></div>
-      <div class="why-copy reveal">
-        <span class="eyebrow">WHY CHOOSE VELOOP</span>
-        <h2>Designed around a better <span>earning experience.</span></h2>
-        <p>VELOOP Rewards is built to make reward discovery feel clear, engaging, and easy to navigate.</p>
-        <div class="check-list"><div><b>✓</b><span><strong>Simple to understand</strong>Clear earning and redemption journeys.</span></div><div><b>✓</b><span><strong>Made for real routines</strong>Flexible activities for different kinds of users.</span></div><div><b>✓</b><span><strong>Focused on engagement</strong>Interactive experiences that encourage consistency.</span></div></div>
-      </div>
-    </section>
-
-    <section class="vision section">
-      <div class="vision-copy reveal"><span class="eyebrow">OUR VISION</span><h2>Making rewards feel<br><span>more accessible.</span></h2><p>Our mission is to create a simple rewards ecosystem where users can discover opportunities, engage consistently, and redeem with confidence.</p><div class="vision-pills"><span>Mission</span><span>Vision</span><span>Future Goals</span></div></div>
-      <div class="vision-art reveal"><div class="vision-orb"></div><div class="vision-node n1">EARN</div><div class="vision-node n2">GROW</div><div class="vision-node n3">REDEEM</div></div>
-    </section>
-
-    <section class="testimonials section">
-      <div class="section-heading reveal"><span class="eyebrow">COMMUNITY</span><h2>What our community<br><span>could say about VELOOP.</span></h2><p>Example testimonial content for the design concept. Replace with approved user testimonials before publishing.</p></div>
-      <div class="testimonial-wrap">
-        <button class="slider-btn prev" aria-label="Previous testimonial">←</button>
-        <div class="testimonial-track">
-          <article class="testimonial active"><div class="quote">“</div><p>VELOOP makes the idea of earning rewards feel simple and easy to understand.</p><div class="person"><span>AK</span><div><b>Alex K.</b><small>Illustrative testimonial</small></div></div></article>
-          <article class="testimonial"><div class="quote">“</div><p>I like having different activities available instead of being locked into one way to earn.</p><div class="person"><span>RM</span><div><b>Riya M.</b><small>Illustrative testimonial</small></div></div></article>
-          <article class="testimonial"><div class="quote">“</div><p>The clean experience makes it easy to understand what I can do next.</p><div class="person"><span>DS</span><div><b>Dev S.</b><small>Illustrative testimonial</small></div></div></article>
-        </div>
-        <button class="slider-btn next" aria-label="Next testimonial">→</button>
-      </div>
-      <div class="dots"><button class="dot active" data-slide="0"></button><button class="dot" data-slide="1"></button><button class="dot" data-slide="2"></button></div>
-    </section>
-
-    <section class="business section" id="business">
-      <div class="business-box reveal">
-        <div><span class="eyebrow">FOR BUSINESS</span><h2>Put your brand in front of<br><span>engaged audiences.</span></h2><p>Explore opportunities for advertising, brand promotion, partnerships, and campaigns.</p></div>
-        <div class="business-actions"><a class="btn btn-primary" href="#cta">Partner With Us <span>→</span></a><div class="business-features"><span>✓ Advertising</span><span>✓ Partnerships</span><span>✓ Campaigns</span></div></div>
-      </div>
-    </section>
-
-    <section class="faq section" id="faq">
-      <div class="section-heading centered reveal"><span class="eyebrow">FAQ</span><h2>Questions? We've got<br><span>answers.</span></h2></div>
-      <div class="faq-list">
-        <div class="faq-item active reveal"><button class="faq-question">What is VELOOP Rewards?<span>+</span></button><div class="faq-answer"><p>VELOOP Rewards is a rewards and engagement platform concept where users can participate in activities and earn VEs.</p></div></div>
-        <div class="faq-item reveal"><button class="faq-question">How do I earn?<span>+</span></button><div class="faq-answer"><p>You can explore eligible earning opportunities such as ads, referrals, streaks, bonuses, promo codes and other activities.</p></div></div>
-        <div class="faq-item reveal"><button class="faq-question">How do withdrawals work?<span>+</span></button><div class="faq-answer"><p>Complete eligible activities, earn VEs, choose a supported withdrawal method, and follow the redemption flow.</p></div></div>
-        <div class="faq-item reveal"><button class="faq-question">What are VEs?<span>+</span></button><div class="faq-answer"><p>VEs are the reward units used in this landing-page concept. Exact conversion and terms should be confirmed by VELOOP.</p></div></div>
-        <div class="faq-item reveal"><button class="faq-question">How long do withdrawals take?<span>+</span></button><div class="faq-answer"><p>Withdrawal timing should be based on the official VELOOP policy and should not be presented as a guaranteed time without approval.</p></div></div>
-        <div class="faq-item reveal"><button class="faq-question">How do referrals work?<span>+</span></button><div class="faq-answer"><p>Use the referral program to invite eligible users. Exact referral rewards and conditions should follow VELOOP's approved terms.</p></div></div>
-        <div class="faq-item reveal"><button class="faq-question">How do promo codes work?<span>+</span></button><div class="faq-answer"><p>Eligible promotional codes can be entered according to the platform's rules and may unlock promotional opportunities.</p></div></div>
-      </div>
-    </section>
-
-    <section class="cta section" id="cta">
-      <div class="cta-glow"></div>
-      <div class="cta-content reveal"><span class="eyebrow">YOUR REWARD JOURNEY STARTS HERE</span><h2>Ready to start<br><span>earning?</span></h2><p>Create your free account and discover a smarter way to engage with rewards.</p><a class="btn btn-light" href="#home">Create Free Account <span>→</span></a></div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-main">
-      <div class="footer-brand"><a class="logo" href="#home"><span class="logo-mark">V</span><span>VELOOP<span class="logo-muted">Rewards</span></span></a><p>A modern rewards and engagement platform concept designed around simple earning experiences.</p><div class="socials"><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="X">x</a></div></div>
-      <div class="footer-col"><h4>Get the App</h4><a href="#">Coming Soon</a><a href="#">Google Play</a><a href="#">App Store</a></div>
-      <div class="footer-col"><h4>Earn Money</h4><a href="#earn">Watch Ads</a><a href="#earn">Daily Streak</a><a href="#earn">Stake & Earn</a><a href="#earn">Referral Program</a><a href="#earn">Mine & Earn</a><a href="#earn">Tap & Earn</a></div>
-      <div class="footer-col"><h4>For Business</h4><a href="#business">Advertise</a><a href="#business">Partnerships</a><a href="#business">Brand Promotions</a><a href="#business">Contact Business Team</a></div>
-      <div class="footer-col"><h4>Company</h4><a href="#about">About</a><a href="#">Careers</a><a href="#">Blog</a><a href="#">Contact</a></div>
-      <div class="footer-col"><h4>Legal</h4><a href="#">Privacy Policy</a><a href="#">Terms & Conditions</a><a href="#">Cookie Policy</a><a href="#">Refund & Cancellation</a><a href="#">Legal / Policies</a></div>
+  <div class="hero-art reveal">
+    <div class="glow"></div>
+    <div class="wallet-card">
+      <div class="wallet-head"><div><small>Your balance</small><strong>12,480 <span>VEs</span></strong></div><div class="wallet-icon">◈</div></div>
+      <div class="chart"><svg viewBox="0 0 500 180" preserveAspectRatio="none"><defs><linearGradient id="fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#7357f3" stop-opacity=".26"/><stop offset="1" stop-color="#7357f3" stop-opacity="0"/></linearGradient></defs><path class="area" d="M0 151 C60 126 75 143 125 110 S190 121 230 82 S292 99 338 59 S415 75 500 20 L500 180 L0 180Z"/><path class="line" d="M0 151 C60 126 75 143 125 110 S190 121 230 82 S292 99 338 59 S415 75 500 20"/></svg></div>
+      <div class="chart-label"><span>Reward growth</span><b>+24.8%</b></div>
     </div>
-    <div class="footer-bottom"><span>© 2026 VELOOP Rewards. All Rights Reserved.</span><span>Made for a premium rewards experience.</span></div>
-  </footer>
+    <div class="float-card float-one"><span class="float-icon green">✓</span><div><b>+250 VEs</b><small>Daily Bonus</small></div></div>
+    <div class="float-card float-two"><span class="float-icon purple">₹</span><div><b>₹500</b><small>Withdrawal ready</small></div></div>
+    <span class="coin coin-one">VE</span><span class="coin coin-two">★</span>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<section class="trust section-wide">
+  <div><span>✓</span><p><b>Secure</b><small>Trust-focused experience</small></p></div>
+  <div><span>↗</span><p><b>Fast Withdrawals</b><small>Simple redemption flow</small></p></div>
+  <div><span>◆</span><p><b>Multiple Rewards</b><small>More ways to redeem</small></p></div>
+  <div><span>∞</span><p><b>Growing Community</b><small>Built for everyday users</small></p></div>
+</section>
+
+<section class="section" id="earn">
+  <div class="heading reveal"><div class="eyebrow">WAYS TO EARN</div><h2>More ways to earn.<br><span>More reasons to keep going.</span></h2><p>Choose activities that fit your routine and turn your time and engagement into rewards.</p></div>
+  <div class="earn-grid">
+    <article class="feature reveal"><span class="icon">▶</span><h3>Watch Ads</h3><p>Complete ad activities and collect rewards along the way.</p><a href="#cta">Learn more →</a></article>
+    <article class="feature reveal"><span class="icon">↗</span><h3>Referral Program</h3><p>Invite friends and grow your rewards together.</p><a href="#cta">Learn more →</a></article>
+    <article class="feature reveal"><span class="icon">♟</span><h3>Daily Streak</h3><p>Stay consistent and unlock rewards for showing up.</p><a href="#cta">Learn more →</a></article>
+    <article class="feature reveal"><span class="icon">◉</span><h3>Mine & Earn</h3><p>Explore simple reward activities and build your balance.</p><a href="#cta">Learn more →</a></article>
+    <article class="feature reveal"><span class="icon">◆</span><h3>Stake & Earn</h3><p>Put eligible rewards to work through available options.</p><a href="#cta">Learn more →</a></article>
+    <article class="feature reveal"><span class="icon">⌁</span><h3>Tap & Earn</h3><p>Complete quick interactions designed for easy earning.</p><a href="#cta">Learn more →</a></article>
+    <article class="feature reveal"><span class="icon">↻</span><h3>Sync & Earn</h3><p>Connect your activities and keep your earning journey moving.</p><a href="#cta">Learn more →</a></article>
+    <article class="feature reveal"><span class="icon">%</span><h3>Promo Codes</h3><p>Use eligible promotional codes for additional opportunities.</p><a href="#cta">Learn more →</a></article>
+    <article class="feature reveal"><span class="icon">✦</span><h3>Lucky Spins</h3><p>Try your luck with engaging reward experiences.</p><a href="#cta">Learn more →</a></article>
+    <article class="feature reveal"><span class="icon">☀</span><h3>Daily Bonus</h3><p>Check in regularly and collect available daily bonuses.</p><a href="#cta">Learn more →</a></article>
+    <article class="feature reveal"><span class="icon">XP</span><h3>XP Rewards</h3><p>Build experience and unlock more ways to engage.</p><a href="#cta">Learn more →</a></article>
+    <article class="feature reveal"><span class="icon">★</span><h3>Bonus Events</h3><p>Discover limited reward opportunities when available.</p><a href="#cta">Learn more →</a></article>
+  </div>
+</section>
+
+<section class="section-wide redeem" id="withdraw">
+  <div class="section redeem-inner">
+    <div class="heading reveal"><div class="eyebrow">REDEEM REWARDS</div><h2>Earn it. Choose it.<br><span>Redeem it.</span></h2><p>Explore supported reward and payment options. Availability can vary by eligibility and platform policy.</p></div>
+    <div class="reward-row">
+      <article class="reward-card reveal"><div class="reward-logo upi"><b>UPI</b></div><span class="tag">DIGITAL PAYOUT</span><h3>UPI</h3><p>Redeem eligible rewards through a familiar digital payment option.</p></article>
+      <article class="reward-card reveal"><div class="reward-logo amazon"><b>a</b></div><span class="tag">GIFT CARD</span><h3>Amazon Gift Card</h3><p>Redeem eligible rewards through an Amazon gift card.</p></article>
+      <article class="reward-card reveal"><div class="reward-logo gpay"><b>G</b></div><span class="tag">GIFT CARD</span><h3>Google Pay Gift Card</h3><p>Use eligible rewards for supported Google products and services.</p></article>
+      <article class="reward-card reveal"><div class="reward-logo paypal"><b>P</b></div><span class="tag">DIGITAL WALLET</span><h3>PayPal</h3><p>A digital wallet option where supported and eligible.</p></article>
+    </div>
+    <div class="option-scroll reveal"><span class="plus">+ More options</span><span>Gift Cards</span><span>Digital Wallets</span><span>UPI Payments</span><span>Partner Rewards</span></div>
+  </div>
+</section>
+
+<section class="section steps">
+  <div class="heading center reveal"><div class="eyebrow">HOW IT WORKS</div><h2>Three simple steps.<br><span>One rewarding journey.</span></h2></div>
+  <div class="steps-grid">
+    <article class="step reveal"><small>01</small><div class="step-art">◎</div><h3>Create Account</h3><p>Join VELOOP Rewards and set up your account.</p></article>
+    <article class="step reveal"><small>02</small><div class="step-art">↗</div><h3>Earn Rewards</h3><p>Pick activities you like and collect VEs.</p></article>
+    <article class="step reveal"><small>03</small><div class="step-art">◇</div><h3>Redeem Rewards</h3><p>Choose an eligible withdrawal method and redeem.</p></article>
+  </div>
+</section>
+
+<section class="section flow">
+  <div class="flow-copy reveal"><div class="eyebrow">HOW WITHDRAWALS WORK</div><h2>From activity to<br><span>reward in a few steps.</span></h2><p>Keep the redemption journey clear and easy to understand from the moment you earn to the moment you receive your reward.</p><a class="btn primary" href="#cta">Start Earning <b>→</b></a></div>
+  <div class="flow-list">
+    <div class="flow-item reveal"><b>01</b><span>Complete Activities</span><i>→</i></div>
+    <div class="flow-item reveal"><b>02</b><span>Earn VEs</span><i>→</i></div>
+    <div class="flow-item reveal"><b>03</b><span>Choose Withdrawal Method</span><i>→</i></div>
+    <div class="flow-item active reveal"><b>04</b><span>Receive Reward</span><i>✓</i></div>
+  </div>
+</section>
+
+<section class="section why" id="about">
+  <div class="why-art reveal"><div class="orb"></div><div class="why-card top">Simple <b>✓</b></div><div class="why-card right">Rewarding <b>✦</b></div><div class="why-card bottom">Built for you <b>∞</b></div></div>
+  <div class="why-copy reveal"><div class="eyebrow">WHY CHOOSE VELOOP</div><h2>Designed around a better <span>earning experience.</span></h2><p>VELOOP Rewards is built to make reward discovery feel clear, engaging, and easy to navigate.</p><div class="checks"><div><b>✓</b><p><strong>Simple to understand</strong>Clear earning and redemption journeys.</p></div><div><b>✓</b><p><strong>Made for real routines</strong>Flexible activities for different kinds of users.</p></div><div><b>✓</b><p><strong>Focused on engagement</strong>Interactive experiences that encourage consistency.</p></div></div></div>
+</section>
+
+<section class="section vision">
+  <div class="vision-copy reveal"><div class="eyebrow">OUR VISION</div><h2>Making rewards feel<br><span>more accessible.</span></h2><p>Our mission is to create a simple rewards ecosystem where users can discover opportunities, engage consistently, and redeem with confidence.</p><div class="pills"><span>Mission</span><span>Vision</span><span>Future Goals</span></div></div>
+  <div class="vision-art reveal"><div class="vision-orb"></div><b class="node n1">EARN</b><b class="node n2">GROW</b><b class="node n3">REDEEM</b></div>
+</section>
+
+<section class="section testimonials">
+  <div class="heading reveal"><div class="eyebrow">COMMUNITY</div><h2>What our community<br><span>could say about VELOOP.</span></h2><p>Example testimonial content for the design concept. Replace with approved user testimonials before publishing.</p></div>
+  <div class="slider reveal"><button class="slide-btn prev" aria-label="Previous">←</button><div class="slides">
+    <article class="testimonial active"><span class="quote">“</span><p>VELOOP makes the idea of earning rewards feel simple and easy to understand.</p><div class="person"><b>AK</b><span><strong>Alex K.</strong><small>Illustrative testimonial</small></span></div></article>
+    <article class="testimonial"><span class="quote">“</span><p>I like having different activities available instead of being locked into one way to earn.</p><div class="person"><b>RM</b><span><strong>Riya M.</strong><small>Illustrative testimonial</small></span></div></article>
+    <article class="testimonial"><span class="quote">“</span><p>The clean experience makes it easy to understand what I can do next.</p><div class="person"><b>DS</b><span><strong>Dev S.</strong><small>Illustrative testimonial</small></span></div></article>
+  </div><button class="slide-btn next" aria-label="Next">→</button></div>
+  <div class="dots"><button class="dot active" data-slide="0"></button><button class="dot" data-slide="1"></button><button class="dot" data-slide="2"></button></div>
+</section>
+
+<section class="section-wide business" id="business"><div class="business-box reveal"><div><div class="eyebrow">FOR BUSINESS</div><h2>Put your brand in front of<br><span>engaged audiences.</span></h2><p>Explore opportunities for advertising, brand promotion, partnerships, and campaigns.</p></div><div><a class="btn primary" href="#cta">Partner With Us <b>→</b></a><div class="business-points"><span>✓ Advertising</span><span>✓ Partnerships</span><span>✓ Campaigns</span></div></div></div></section>
+
+<section class="section faq" id="faq"><div class="heading center reveal"><div class="eyebrow">FAQ</div><h2>Questions? We've got<br><span>answers.</span></h2></div><div class="faq-list">
+  <div class="faq-item active reveal"><button>What is VELOOP Rewards?<span>+</span></button><p>VELOOP Rewards is a rewards and engagement platform concept where users can participate in activities and earn VEs.</p></div>
+  <div class="faq-item reveal"><button>How do I earn?<span>+</span></button><p>You can explore eligible opportunities such as ads, referrals, streaks, bonuses, promo codes and other activities.</p></div>
+  <div class="faq-item reveal"><button>How do withdrawals work?<span>+</span></button><p>Complete eligible activities, earn VEs, choose a supported withdrawal method, and follow the redemption flow.</p></div>
+  <div class="faq-item reveal"><button>What are VEs?<span>+</span></button><p>VEs are the reward units used in this landing-page concept. Exact conversion and terms should be confirmed by VELOOP.</p></div>
+  <div class="faq-item reveal"><button>How long do withdrawals take?<span>+</span></button><p>Withdrawal timing should be based on the official VELOOP policy and should not be presented as a guaranteed time without approval.</p></div>
+  <div class="faq-item reveal"><button>How do referrals work?<span>+</span></button><p>Use the referral program to invite eligible users. Exact referral rewards and conditions should follow VELOOP's approved terms.</p></div>
+</div></section>
+
+<section class="section-wide cta" id="cta"><div class="cta-inner reveal"><div class="eyebrow">YOUR REWARD JOURNEY STARTS HERE</div><h2>Ready to start<br><span>earning?</span></h2><p>Create your free account and discover a smarter way to engage with rewards.</p><a class="btn light" href="#home">Create Free Account <b>→</b></a></div></section>
+</main>
+
+<footer class="footer"><div class="footer-grid">
+  <div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark">V</span><span>VELOOP <em>Rewards</em></span></a><p>A modern rewards and engagement platform concept designed around simple earning experiences.</p><div class="socials"><a href="#cta">ig</a><a href="#cta">in</a><a href="#cta">x</a></div></div>
+  <div><h4>Get the App</h4><a href="#cta">Coming Soon</a><a href="#cta">Google Play</a><a href="#cta">App Store</a></div>
+  <div><h4>Earn Money</h4><a href="#earn">Watch Ads</a><a href="#earn">Daily Streak</a><a href="#earn">Stake & Earn</a><a href="#earn">Referral Program</a></div>
+  <div><h4>For Business</h4><a href="#business">Advertise</a><a href="#business">Partnerships</a><a href="#business">Brand Promotions</a></div>
+  <div><h4>Company</h4><a href="#about">About</a><a href="#cta">Careers</a><a href="#faq">FAQ</a><a href="#cta">Contact</a></div>
+  <div><h4>Legal</h4><a href="#cta">Privacy Policy</a><a href="#cta">Terms & Conditions</a><a href="#cta">Cookie Policy</a></div>
+</div><div class="footer-bottom"><span>© 2026 VELOOP Rewards. All Rights Reserved.</span><span>Premium rewards experience.</span></div></footer>
+<script src="script.js"></script>
 </body>
 </html>
